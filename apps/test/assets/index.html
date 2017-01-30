@@ -1,0 +1,54 @@
+<main>
+      <h1>MDC Simple Menu</h1>
+      <p>
+        Button position:
+        <label>
+          <input type="radio" name="position" value="top left" checked>
+          Top left
+        </label>
+        <label>
+          <input type="radio" name="position" value="top right">
+          Top right
+        </label>
+        <label>
+          <input type="radio" name="position" value="bottom left">
+          Bottom left
+        </label>
+        <label>
+          <input type="radio" name="position" value="bottom right">
+          Bottom right
+        </label>
+      </p>
+      <p>
+        <label>
+          <input type="checkbox" name="dark">
+          Dark mode
+        </label>
+      </p>
+      <div>
+        <span>Last Selected item: <em id="last-selected">&lt;none selected&gt;</em></span>
+      </div>
+      <div class="demo-content">
+        <div class="mdc-menu-anchor">
+          <button class="toggle">Toggle</button>
+
+          <div class="mdc-simple-menu" style="position: absolute;" tabindex="-1">
+            <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
+              <li class="mdc-list-item" role="menuitem" tabindex="0">Back</li>
+              <li class="mdc-list-item" role="menuitem" tabindex="0">Forward</li>
+              <li class="mdc-list-item" role="menuitem" tabindex="0">Reload</li>
+              <li class="mdc-list-divider" role="separator"></li>
+
+              <li class="mdc-list-item" role="menuitem" tabindex="0">Save As...</li>
+              <li class="mdc-list-item" role="menuitem" tabindex="0">Print...</li>
+              <li class="mdc-list-item" role="menuitem" tabindex="0">Cast...</li>
+              <li class="mdc-list-item" role="menuitem" tabindex="0">Translate to English</li>
+              <li class="mdc-list-divider" role="separator"></li>
+
+              <li class="mdc-list-item" role="menuitem" tabindex="0">View Page Source</li>
+              <li class="mdc-list-item" role="menuitem" tabindex="0">Inspect</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
